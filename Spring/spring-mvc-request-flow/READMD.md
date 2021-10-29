@@ -91,6 +91,7 @@ RequestMappingInfo "1" *--> "*" RequestCondition
 
 interface HandlerMapping {
   HandlerExecutionChain getHandler(HttpServletRequest request);
+}
 
 abstract class AbstractHandlerMapping implements HandlerMapping {
   protected abstract Object getHandlerInternal(HttpServletRequest request);
@@ -296,3 +297,4 @@ Spring Boot通过WebMvcAutoConfiguration进行自动装配，
 ## Reference
 
 - [Spring MVC](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#spring-web)
+- 

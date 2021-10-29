@@ -11,6 +11,7 @@
     <modules>
         <module>bean-life-cycle</module>
         <module>spring-mvc-request-flow</module>
+        <module>spring-boot-auto-config</module>
     </modules>
 
     <properties>
