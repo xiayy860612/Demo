@@ -91,6 +91,7 @@ RequestMappingInfo "1" *--> "*" RequestCondition
 
 interface HandlerMapping {
   HandlerExecutionChain getHandler(HttpServletRequest request);
+}
 
 abstract class AbstractHandlerMapping implements HandlerMapping {
   protected abstract Object getHandlerInternal(HttpServletRequest request);
