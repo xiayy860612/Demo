@@ -2,6 +2,8 @@ package com.s2u2m.demo.spring.mvc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
 

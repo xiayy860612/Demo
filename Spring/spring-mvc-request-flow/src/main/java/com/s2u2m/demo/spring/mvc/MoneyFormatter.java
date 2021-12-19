@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import java.text.ParseException;
 import java.util.Locale;
 
+/**
+ * money string to money object
+ */
 @Component
 public class MoneyFormatter implements Formatter<Money> {
     @Override
@@ -23,6 +26,7 @@ public class MoneyFormatter implements Formatter<Money> {
 
     @Override
     public String print(Money object, Locale locale) {
-        return object.getCurrency() + " " + object.getValue();
+        return object.getCurrency()
+                + " " + object.getValue();
     }
 }

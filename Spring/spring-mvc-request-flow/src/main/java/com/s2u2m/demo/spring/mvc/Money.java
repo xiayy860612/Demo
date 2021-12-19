@@ -8,4 +8,9 @@ import lombok.Setter;
 public class Money {
     private String currency = "CNY";
     private String value;
+
+    @Override
+    public String toString() {
+        return currency + " " + value;
+    }
 }
